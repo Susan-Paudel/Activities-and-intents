@@ -1,5 +1,5 @@
 package com.example.twoactivities;
-
+//import required library
 import static androidx.core.content.PackageManagerCompat.LOG_TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,10 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-/**
- * The TwoActivities app contains two activities and sends messages
- * (intents) between them.
- */
+//MinActivity child class inherit all the property of AppCompatActivity i.e. parent
 public class MainActivity extends AppCompatActivity {
     // Class name for Log tag
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
@@ -31,10 +28,13 @@ public class MainActivity extends AppCompatActivity {
      * Initializes the activity.
      *
      * @param savedInstanceState The current state data.
+     * Activities have the ability,to restore themselves to a previous state using the data stored in this bundle
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //super keyword is used to refer parent class object
         super.onCreate(savedInstanceState);
+        //it set the XML file as your main layout when the app starts
         setContentView(R.layout.activity_main);
 
         // Initialize all the view variables.
@@ -49,13 +49,24 @@ public class MainActivity extends AppCompatActivity {
      * The return intent from the second activity is onActivityResult().
      *
      * @param view The view (Button) that was clicked.
+     * The TwoActivities app contains two activities and sends messages
+     * (intents) between them.
      */
     public void launchSecondActivity(View view) {
+        //display Button clicked in logcat
         Log.d(LOG_TAG, "Button clicked!");
+        /**
+         * creating object of Intent class
+         * @param this focus on MainActivity class and secondActivity class
+         * Intent help to link two activity or pages
+         */
         Intent intent = new Intent(this, SecondActivity.class);
+        //set the values to message variable
         String message = mMessageEditText.getText().toString();
+        //pass the value to extra_message
         intent.putExtra(EXTRA_MESSAGE, message);
         //startActivity(intent);
+        //it take some data in it
         startActivityForResult(intent, TEXT_REQUEST);
     }
     /**
@@ -77,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 mReplyHeadTextView.setVisibility(View.VISIBLE);
                 // Set the reply and make it visible.
                 mReplyTextView.setText(reply);
+                // Make the reply head visible.
                 mReplyTextView.setVisibility(View.VISIBLE);
             }
         }
