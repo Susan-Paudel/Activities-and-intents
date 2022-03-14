@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 /**
@@ -23,10 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText mMessageEditText;
     // Unique tag for the intent reply
     public static final int TEXT_REQUEST = 1;
-    // TextView for the reply header
-    private TextView mReplyHeadTextView;
-    // TextView for the reply body
-    private TextView mReplyTextView;
+   //private button
+    private Button Button_1,Button_2,Button_3;
     /**
      * Initializes the activity.
      *
@@ -36,11 +35,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // Initialize all the view variables.
-        mMessageEditText = findViewById(R.id.editText_main);
-        mReplyHeadTextView = findViewById(R.id.text_header_reply);
-        mReplyTextView = findViewById(R.id.text_message_reply);
+        //find view by id for each button
+        Button_1=findViewById(R.id.text_one);
+        Button_2=findViewById(R.id.text_two);
+        Button_3=findViewById(R.id.text_three);
     }
     /**
      * Handles the onClick for the "Send" button. Gets the value of the main EditText,
@@ -65,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
      * @param resultCode Code that comes back from SecondActivity.
      * @param data Intent data sent back from SecondActivity.
      */
-    @Override
+   /* @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         // Test for the right intent reply.
@@ -80,5 +78,5 @@ public class MainActivity extends AppCompatActivity {
                 mReplyTextView.setVisibility(View.VISIBLE);
             }
         }
-    }
+    }*/
 }
