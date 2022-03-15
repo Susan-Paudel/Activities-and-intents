@@ -40,14 +40,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public void text_1(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, "text_one");
         startActivity(intent);
     }
     public void text_2(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, "text_two");
         startActivity(intent);
     }
     public void text_3(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, "text_three");
         startActivity(intent);
     }
 }

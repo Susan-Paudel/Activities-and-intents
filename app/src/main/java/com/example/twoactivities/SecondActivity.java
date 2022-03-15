@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class SecondActivity extends AppCompatActivity {
     // Unique tag for the intent reply.
     public static final String EXTRA_REPLY ="com.example.android.MainActivity.extra.REPLY";
-    private TextView text_1,text_2,text_3;
+    private TextView text_1;
     /**
      * Initializes the activity.
      *
@@ -27,9 +27,16 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         // Initialize view variables.
         text_1 = findViewById(R.id.textView);
-        text_2 = findViewById(R.id.textView1);
-        text_3 = findViewById(R.id.textView2);
         // Put that message into the text_message TextView
+        Intent intent=getIntent();
+        String msg = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        if(msg.equals("text_one")){
+            text_1.setText(R.string.article_one);
+        }else if(msg.equals("text_two")){
+            text_1.setText(R.string.article_two);
+        }else if(msg.equals("text_three")){
+            text_1.setText(R.string.article_three);
+        }
 
 
     }
