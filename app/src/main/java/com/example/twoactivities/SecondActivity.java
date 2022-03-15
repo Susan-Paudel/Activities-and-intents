@@ -1,5 +1,5 @@
 package com.example.twoactivities;
-
+//import required library
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.widget.TextView;
  * launched from an intent with a message, and sends an intent
  * back with a second message.
  */
+//secondActivity inherit the property of AppCompatActivity class
 public class SecondActivity extends AppCompatActivity {
     // Unique tag for the intent reply.
     public static final String EXTRA_REPLY ="com.example.android.MainActivity.extra.REPLY";
