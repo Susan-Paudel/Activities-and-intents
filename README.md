@@ -1,19 +1,35 @@
-# task
+# Lab Work 4
+## Activities-and-intents
 
-### home page
-![alt text](LandingPage.png)
+**This is the fourth lab Exercise "Activities-and-intents" with two textView ,Button and Edittext as this readme file consist of the screenshot and
+video i.e. gif file for the final app created**
 
-### message written
-![alt text](writefirstmessage.png)
 
-### send button clcik
-![alt text](afterSendButtonClick.png)
+### Landing Page UI
+![Landing page](ScreenshotAndRecord/LandingPage.png)
 
-### After reply button clcik
-![alt text](AfterReplybuttonClick.png)
+**The above screenshot show the home page consist of two textview ,one edittext and one button**
+
+### Write Message in EditText
+![message to be send](ScreenshotAndRecord/writefirstmessage.png)
+
+**The above screenshot show message written in editText that is about to be send**
+
+### Send Button is Clicked
+![send button click](ScreenshotAndRecord/afterSendButtonClick.png)
+
+**The above screenshot show when the button is clicked then second activity will display with insert message in textview**
 
 ### reply from second activity
-![alt text](replyfromSecondActivity.png)
+![reply message](ScreenshotAndRecord/replyfromSecondActivity.png)
 
-###record
-![alt text](Record.gif)
+**The above screenshot show the message written in second activity**
+
+### After reply button Click
+![reply button is clicked](ScreenshotAndRecord/AfterReplybuttonClick.png)
+
+**The above screenshot show when the reply button is clicked then first activity will display with reply message in textview**
+
+
+### Working of Application
+![video Recording](ScreenshotAndRecord/Record.gif)
