@@ -33,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //find view by id for each button
-        Button_1=findViewById(R.id.text_one);
-        Button_2=findViewById(R.id.text_two);
-        Button_3=findViewById(R.id.text_three);
     }
     public void text_1(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
