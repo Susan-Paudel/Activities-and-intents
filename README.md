@@ -25,4 +25,5 @@
 
 ![alt text](ScreenshotAndRecord/Record.gif)
 
-**The above record show the whole working functionality of app**
+**The above record show the whole working functionality of app.The UI Consist of two activity i.e.Two pages 
+**
