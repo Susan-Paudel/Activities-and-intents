@@ -25,5 +25,8 @@
 
 ![alt text](ScreenshotAndRecord/Record.gif)
 
-**The above record show the whole working functionality of app.The UI Consist of two activity i.e.Two pages 
-**
+**The above record show the whole working functionality of app.The UI Consist of two activity i.e.Two 
+pages with three different views; 2 button views and 3 text view. The 'SayHello' button is used to 
+display the count value in next page while the 'Count' button is used to increase the count value 
+when pressed. Similarly, the text view at the center is used to display the current count value and the
+counter value in the second page**
