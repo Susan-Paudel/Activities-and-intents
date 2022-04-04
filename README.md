@@ -31,4 +31,6 @@
 
 ![Record](ScreenshotAndRecord/Record.gif)
 
-**The above record show the full functionality of app**
+**The above record show the full functionality of app.It consist of two pages at first page it contain three
+button and second page consist of three textView .If the text_one button is clicked then it display article first and 
+if the user clicked second button then it will display second article and like wise for button third**
