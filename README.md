@@ -34,4 +34,6 @@ video i.e. gif file for the final app created**
 ### Working of Application
 ![video Recording](ScreenshotAndRecord/Record.gif)
 
-**The above video show the working process of application**
+**The above video show the working process of application. The UI consist of two Activity i.e.Two pages.
+Each page contain two textView,One button and one EditText. textview for display the text that is get from another page,
+button help to pass the data to next page and Edittext where we store a text message to be passed.**
